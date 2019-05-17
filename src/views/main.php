@@ -1,5 +1,8 @@
 <?php
 use yii\web\View;
+use yii\helpers\Html;
+
+echo Html::tag('style', $style, []);
 
 $jsLoad = <<<JS
     let spinnerHtml = `$spinner`;

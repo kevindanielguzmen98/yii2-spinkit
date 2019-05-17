@@ -41,6 +41,13 @@ class Spinkit extends \yii\base\Widget
     public $ajax = true;
 
     /**
+     * Estilos personalizados
+     * 
+     * @var string
+     */
+    public $customStyles = '';
+
+    /**
      * Array llave valor de los spinners que se pueden utilizar
      * 
      * @var array
@@ -79,7 +86,8 @@ class Spinkit extends \yii\base\Widget
             'spinner' => Html::tag('div', $this->makeSpinner(), [
                 'class' => 'spinner-container'
             ]),
-            'ajax' => $this->ajax
+            'ajax' => $this->ajax,
+            'style' => $this->customStyles
         ]);
     }
 
