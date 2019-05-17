@@ -1,0 +1,21 @@
+{
+    "name": "kevocode/yii2-spinkit",
+    "description": "Widget de yii2 para la implementación de spinners de carga, por defecto se ha implementado la libreria de spinners Spinkit.",
+    "type": "library, yii2-widget",
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Kevin Guzman",
+            "email": "kevindanielguzmen98@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "bower-asset/spinkit": "~1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "kevocode\\spinkit\\": "src/"
+        }
+    }
+}
